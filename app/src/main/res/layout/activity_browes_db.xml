@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n1:paddingLeft="@dimen/activity_horizontal_margin" n1:paddingTop="@dimen/activity_vertical_margin" n1:paddingRight="@dimen/activity_horizontal_margin" n1:paddingBottom="@dimen/activity_vertical_margin" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <TextView n1:textSize="22.0sp" n1:textStyle="bold" n1:gravity="center" n1:id="@id/tv_browsed_file_name" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:text="SA_20160825_105039.backup" />
+    <TextView n1:textSize="20.0sp" n1:gravity="center" n1:id="@id/tv_browsed_file_detail" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginTop="15.0dip" n1:text="SA_20160825_105039.backup" n1:layout_below="@id/tv_browsed_file_name" />
+    <Button n1:id="@id/btn_browsed_file_import" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginTop="15.0dip" n1:text="Import" n1:layout_below="@id/tv_browsed_file_detail" n1:layout_centerHorizontal="true" />
+</RelativeLayout>

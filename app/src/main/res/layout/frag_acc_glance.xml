@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <LinearLayout n1:orientation="horizontal" n1:background="#ff34374a" n1:padding="10.0dip" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:baselineAligned="false" n1:layout_above="@id/adView">
+        <LinearLayout n1:orientation="vertical" n1:background="@drawable/border_ui" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:layout_marginRight="5.0dip" n1:layout_weight="0.5">
+            <LinearLayout n1:orientation="vertical" n1:background="#ff236087" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+                <TextView n1:textSize="@dimen/text_size_14" n1:textStyle="bold" n1:textColor="@android:color/white" n1:layout_gravity="left" n1:id="@id/txtCredit" n1:paddingTop="4.0dip" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="5.0dip" n1:text="Credit" />
+            </LinearLayout>
+            <LinearLayout n1:orientation="vertical" n1:background="#ff3b4259" n1:layout_width="fill_parent" n1:layout_height="fill_parent">
+                <ListView n1:scrollbarSize="3.0dip" n1:scrollbarStyle="outsideOverlay" n1:id="@id/TransactionListCredit" n1:background="@color/red" n1:scrollbars="vertical" n1:layout_width="fill_parent" n1:layout_height="0.0dip" n1:scrollingCache="true" n1:divider="#ffffffff" n1:dividerHeight="1.0dip" n1:layout_weight="1.0" n1:smoothScrollbar="true" />
+                <TextView n1:textSize="@dimen/text_size_15" n1:textStyle="bold" n1:textColor="#ffffffff" n1:gravity="center" n1:layout_gravity="center_horizontal" n1:id="@id/txtNoCreditFound" n1:visibility="gone" n1:layout_width="100.0dip" n1:layout_height="wrap_content" n1:text="@string/txt_Nocrdata" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout n1:orientation="vertical" n1:background="@drawable/border_ui" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:layout_marginLeft="5.0dip" n1:layout_weight="0.5">
+            <LinearLayout n1:orientation="vertical" n1:background="#ff236087" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+                <TextView n1:textSize="@dimen/text_size_14" n1:textStyle="bold" n1:textColor="@android:color/white" n1:layout_gravity="left" n1:id="@id/txtDebit" n1:paddingTop="4.0dip" n1:paddingBottom="4.0dip" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="5.0dip" n1:text="Debit" />
+            </LinearLayout>
+            <LinearLayout n1:orientation="vertical" n1:background="#ff3b4259" n1:layout_width="fill_parent" n1:layout_height="fill_parent">
+                <ListView n1:scrollbarSize="3.0dip" n1:scrollbarStyle="outsideOverlay" n1:id="@id/TransactionListDebit" n1:background="@color/dark_blue" n1:scrollbars="vertical" n1:layout_width="fill_parent" n1:layout_height="0.0dip" n1:scrollingCache="true" n1:divider="#ffffffff" n1:dividerHeight="1.0dip" n1:layout_weight="1.0" n1:smoothScrollbar="true" />
+                <TextView n1:textSize="@dimen/text_size_15" n1:textStyle="bold" n1:textColor="#ffffffff" n1:gravity="center" n1:layout_gravity="center_horizontal" n1:id="@id/txtNoDebitFound" n1:visibility="gone" n1:layout_width="100.0dip" n1:layout_height="wrap_content" n1:text="@string/txt_Nodbdata" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <com.google.android.gms.ads.AdView n1:id="@id/adView" n1:background="#ff34374a" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginTop="@dimen/margin_admob" n1:layout_alignParentBottom="true" n2:adSize="SMART_BANNER" n2:adUnitId="@string/ad_unit_id" xmlns:n2="http://schemas.android.com/apk/res-auto" />
+</RelativeLayout>

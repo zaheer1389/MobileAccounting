@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/colorBackground" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/lout_account_detail" android:background="@drawable/top_bar" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:onClick="onClick">
+        <LinearLayout android:orientation="horizontal" android:padding="3.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@id/right_arrow">
+            <ImageView android:layout_gravity="center_vertical" android:id="@id/img_account" android:layout_width="60.0dip" android:layout_height="fill_parent" android:layout_marginRight="6.0dip" android:src="@drawable/profile_icon" android:scaleType="fitXY" android:onClick="onClick" />
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="15.0sp" android:textStyle="bold" android:textColor="@color/white" android:gravity="center_vertical" android:layout_width="100.0dip" android:layout_height="wrap_content" android:text="@string/txt_Name" />
+                    <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="@color/white" android:id="@id/tv_account_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="santosh" />
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="15.0sp" android:textStyle="bold" android:textColor="@color/white" android:gravity="center_vertical" android:layout_width="100.0dip" android:layout_height="wrap_content" android:text="@string/txt_Email" />
+                    <TextView android:textSize="12.0sp" android:textStyle="bold" android:textColor="@color/white" android:id="@id/tv_account_email" android:paddingLeft="1.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="santosh" />
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="@color/white" android:gravity="center_vertical" android:layout_width="100.0dip" android:layout_height="wrap_content" android:text="@string/txt_Mobile" />
+                    <TextView android:textSize="13.0sp" android:textStyle="bold" android:textColor="@color/white" android:id="@id/tv_account_number" android:paddingLeft="1.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="santosh" />
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="15.0sp" android:textStyle="bold" android:textColor="@color/white" android:gravity="center_vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/txt_category" android:layout_weight="1.0" />
+                    <TextView android:textSize="15.0sp" android:textStyle="bold" android:textColor="@color/white" android:id="@id/tv_account_category" android:paddingLeft="1.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="santosh" android:layout_weight="2.0" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <ImageView android:id="@id/right_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/blue_arrow" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <include layout="@layout/item_header_balance" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:layout_marginTop="10.0dip">
+        <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@android:color/white" android:gravity="center" android:background="#ff236087" android:layout_width="fill_parent" android:layout_height="30.0dip" android:text="@string/txt_contact" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="2.0dip">
+            <Button android:textSize="16.0sp" android:textStyle="bold" android:textColor="@android:color/white" android:gravity="center" android:id="@id/btn_call" android:background="@drawable/login_button_selector" android:layout_width="0.0dip" android:layout_height="30.0dip" android:layout_marginRight="1.0dip" android:text="@string/txt_call" android:layout_weight="1.0" android:onClick="onClick" />
+            <Button android:textSize="15.0sp" android:textStyle="bold" android:textColor="@android:color/white" android:gravity="center" android:id="@id/btn_email" android:background="@drawable/login_button_selector" android:layout_width="0.0dip" android:layout_height="30.0dip" android:layout_marginRight="1.0dip" android:text="@string/txt_Email" android:layout_weight="1.0" android:onClick="onClick" />
+            <Button android:textSize="15.0sp" android:textStyle="bold" android:textColor="@android:color/white" android:gravity="center" android:id="@id/btn_sms" android:background="@drawable/login_button_selector" android:layout_width="0.0dip" android:layout_height="30.0dip" android:text="SMS" android:layout_weight="1.0" android:onClick="onClick" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="5.0dip">
+        <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@android:color/white" android:gravity="center" android:background="#ff236087" android:layout_width="fill_parent" android:layout_height="30.0dip" android:text="@string/txt_add" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="2.0dip">
+            <Button android:textSize="16.0sp" android:textStyle="bold" android:textColor="@android:color/white" android:gravity="center" android:id="@id/tv_add_credit" android:background="@drawable/login_button_selector" android:layout_width="0.0dip" android:layout_height="30.0dip" android:text="@string/txt_Credit" android:layout_weight="1.0" android:onClick="onClick" />
+            <Button android:textSize="16.0sp" android:textStyle="bold" android:textColor="@android:color/white" android:gravity="center" android:id="@id/tv_add_debit" android:background="@drawable/login_button_selector" android:layout_width="0.0dip" android:layout_height="30.0dip" android:layout_marginLeft="1.0dip" android:layout_marginRight="1.0dip" android:text="@string/txt_Debit" android:layout_weight="1.0" android:onClick="onClick" />
+            <Button android:textSize="16.0sp" android:textStyle="bold" android:textColor="@android:color/white" android:gravity="center" android:id="@id/tv_add_multiple" android:background="@drawable/login_button_selector" android:layout_width="0.0dip" android:layout_height="30.0dip" android:text="@string/txt_mult" android:layout_weight="1.0" android:onClick="onClick" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="5.0dip">
+        <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@android:color/white" android:gravity="center" android:background="#ff236087" android:layout_width="fill_parent" android:layout_height="30.0dip" android:text="@string/title_activity_settle_account" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="2.0dip">
+            <Button android:textSize="16.0sp" android:textStyle="bold" android:textColor="@android:color/white" android:gravity="center" android:id="@id/btn_settle_zero" android:background="@drawable/login_button_selector" android:layout_width="0.0dip" android:layout_height="30.0dip" android:layout_marginLeft="1.0dip" android:layout_marginRight="1.0dip" android:text="As Per Zero" android:layout_weight="1.0" android:onClick="onClick" />
+            <Button android:textSize="15.0sp" android:textStyle="bold" android:textColor="@android:color/white" android:gravity="center" android:id="@id/btn_settle_bls" android:background="@drawable/login_button_selector" android:layout_width="0.0dip" android:layout_height="30.0dip" android:text="With Balance Amount" android:layout_weight="1.5" android:onClick="onClick" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="5.0dip">
+        <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@android:color/white" android:gravity="center" android:background="#ff236087" android:layout_width="fill_parent" android:layout_height="30.0dip" android:text="@string/txt_ledger" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@id/menu_backup" android:title="@string/txt_bac" />
+    <item android:id="@id/menu_restore" android:title="@string/txt_restore" />
+    <item android:id="@id/menu_calculator" android:title="@string/txt_Calculator" />
+    <item android:id="@id/menu_moreapps" android:title="@string/txt_RatingMore" />
+    <item android:id="@id/menu_rate" android:title="@string/txt_Rating" />
+    <item android:id="@id/menu_help" android:title="@string/txt_Help" />
+    <item android:id="@id/menu_refer" android:title="@string/txt_refer" />
+    <item android:id="@id/menu_logout" android:title="@string/txt_logout" />
+</menu>

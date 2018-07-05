@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n1:background="@drawable/gradient_topbar" n1:paddingLeft="@dimen/activity_horizontal_margin" n1:paddingTop="@dimen/activity_vertical_margin" n1:paddingRight="@dimen/activity_horizontal_margin" n1:paddingBottom="@dimen/activity_vertical_margin" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <TextView n1:textStyle="bold" n1:textColor="#ffffffff" n1:gravity="center" n1:id="@id/textView1" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="Please type the following text (ip address) in your browser address bar to view your report on your laptop, computer or pc" n1:layout_centerHorizontal="true" />
+    <TextView n1:textAppearance="?android:textAppearanceLarge" n1:textColor="#ffffffff" n1:gravity="center" n1:id="@id/txtServerIP" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginTop="5.0dip" n1:text="hello_world" n1:layout_below="@id/textView1" n1:layout_centerHorizontal="true" />
+    <Button n1:textStyle="bold" n1:textColor="@android:color/white" n1:id="@id/buttonStop" n1:background="@drawable/dialog_loginselector" n1:layout_width="100.0dip" n1:layout_height="wrap_content" n1:layout_marginTop="10.0dip" n1:text="Stop" n1:layout_below="@id/txtServerIP" n1:layout_centerHorizontal="true" />
+</RelativeLayout>

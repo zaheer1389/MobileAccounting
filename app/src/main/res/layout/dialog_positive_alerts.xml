@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n1:background="@drawable/gradient_topbar" n1:paddingBottom="5.0dip" n1:layout_width="fill_parent" n1:layout_height="wrap_content"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <ImageView n1:id="@id/alert_icon" n1:background="@color/transparent" n1:layout_width="wrap_content" n1:layout_height="40.0dip" n1:layout_margin="10.0dip" n1:src="@drawable/icon_alert" n1:layout_alignParentLeft="true" n1:layout_alignParentTop="true" />
+    <TextView n1:textSize="@dimen/text_size_15" n1:textStyle="bold" n1:textColor="@color/white" n1:id="@id/title_alert" n1:background="@color/transparent" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_margin="10.0dip" n1:text="@string/alert_title" n1:layout_toRightOf="@id/alert_icon" n1:layout_alignTop="@id/alert_icon" n1:layout_alignBottom="@id/alert_icon" />
+    <View n1:id="@id/view_divider_alert" n1:background="@color/white" n1:layout_width="fill_parent" n1:layout_height="2.0dip" n1:layout_marginTop="2.0dip" n1:layout_below="@id/title_alert" />
+    <TextView n1:textStyle="bold" n1:textColor="@android:color/white" n1:gravity="center" n1:id="@id/txt_positive_alert" n1:background="@color/transparent" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginLeft="17.0dip" n1:layout_marginTop="15.0dip" n1:layout_marginRight="17.0dip" n1:layout_below="@id/view_divider_alert" n1:layout_alignParentLeft="true" />
+    <View n1:id="@id/view_footer_alert" n1:background="@color/white" n1:layout_width="fill_parent" n1:layout_height="1.0dip" n1:layout_marginTop="19.0dip" n1:layout_below="@id/txt_positive_alert" />
+    <Button n1:textStyle="bold" n1:textColor="@color/white" n1:id="@id/btn_ok_alert_positive" n1:background="@drawable/dialog_loginselector" n1:layout_width="fill_parent" n1:layout_height="40.0dip" n1:layout_margin="10.0dip" n1:text="@string/btn_Ok" n1:layout_below="@id/view_footer_alert" />
+</RelativeLayout>

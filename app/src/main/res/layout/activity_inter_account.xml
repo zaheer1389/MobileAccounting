@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#ff34374a" android:layout_width="fill_parent" android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android" xmlns:ads="http://schemas.android.com/apk/res-auto">
+    <com.google.android.gms.ads.AdView android:id="@id/adView" android:background="#ff34374a" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentTop="true" ads:adSize="SMART_BANNER" ads:adUnitId="@string/ad_unit_id" />
+    <ScrollView android:id="@id/scrollView1" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="50.0dip" android:layout_below="@id/adView">
+        <LinearLayout android:orientation="vertical" android:id="@id/linearLayout1" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <Spinner android:textAppearance="?android:textAppearanceLarge" android:id="@id/spinner" android:background="@drawable/image_shape" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="0.0dip" android:layout_height="50.0dip" android:layout_marginLeft="8.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="8.0dip" android:prompt="@string/spinner_title" android:layout_weight="0.1" />
+                <ImageView android:id="@id/img_search" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginTop="17.0dip" android:layout_marginRight="5.0dip" android:src="@drawable/search_list" android:onClick="onClick" />
+            </LinearLayout>
+            <RelativeLayout android:focusable="false" android:focusableInTouchMode="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="7.0dip" android:layout_marginTop="13.0dip" android:layout_marginRight="7.0dip" android:layout_marginBottom="7.0dip">
+                <EditText android:textStyle="bold" android:textColor="@color/white" android:id="@id/et_tran_amount" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/txt_Amount" android:singleLine="true" android:layout_toLeftOf="@id/sp_tran_type" android:layout_alignBottom="@id/sp_tran_type" android:layout_alignParentLeft="true" android:inputType="numberDecimal" style="@style/TextViewStyleHint" />
+                <Spinner android:id="@id/sp_tran_type" android:background="@drawable/image_shape" android:layout_width="100.0dip" android:layout_height="45.0dip" android:layout_alignParentRight="true" />
+            </RelativeLayout>
+            <RelativeLayout android:id="@id/relativeLayout1" android:focusable="false" android:focusableInTouchMode="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="7.0dip">
+                <EditText android:textStyle="bold" android:textColor="@color/white" android:id="@id/et_tran_date" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="5.0dip" android:ems="10" android:inputType="date" android:onClick="openDatePicker" style="@style/TextViewStyleHint" />
+                <ImageButton android:id="@id/imageButton1" android:background="@drawable/ic_datepicker" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:cropToPadding="true" android:layout_toRightOf="@id/et_tran_date" android:onClick="openDatePicker" android:contentDescription="@string/selectdate" />
+            </RelativeLayout>
+            <EditText android:textStyle="bold" android:textColor="@color/white" android:id="@id/et_tran_narration" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="7.0dip" android:hint="@string/txt_Narration" android:inputType="textCapWords" style="@style/TextViewStyleHint" />
+            <EditText android:textStyle="bold" android:textColor="@color/white" android:id="@id/et_tran_remark" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="7.0dip" android:hint="@string/txt_Remark_Personal" android:inputType="textCapWords" style="@style/TextViewStyleHint" />
+            <TextView android:textAppearance="?android:textAppearanceLarge" android:textStyle="bold" android:textColor="@color/white" android:id="@id/tvrecipet" android:background="#ff3b4259" android:padding="5.0dip" android:paddingLeft="5.0dip" android:focusable="false" android:focusableInTouchMode="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="7.0dip" android:text="@string/txt_receipt" />
+            <RelativeLayout android:orientation="vertical" android:background="@drawable/top_bar" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="7.0dip">
+                <com.adslinfotech.mobileaccounting.utils.RoundedImageView
+                    android:layout_gravity="center" android:id="@id/img_recipet" android:clickable="true" android:layout_width="100.0dip" android:layout_height="100.0dip" android:src="@drawable/add_receipt" android:layout_centerInParent="true" android:onClick="onClick" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+    <include layout="@layout/bottom" />
+</RelativeLayout>

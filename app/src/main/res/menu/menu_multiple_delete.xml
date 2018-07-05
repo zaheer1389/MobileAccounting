@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu>
+    <item n1:icon="@drawable/menu_select_all" n1:id="@id/menu_select_all" n1:title="@string/update" n2:showAsAction="always"
+        xmlns:n1="http://schemas.android.com/apk/res/android" xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <item n3:icon="@android:drawable/ic_menu_delete" n3:id="@id/menu_delete" n3:title="@string/update" n4:showAsAction="always"
+        xmlns:n3="http://schemas.android.com/apk/res/android" xmlns:n4="http://schemas.android.com/apk/res-auto" />
+</menu>

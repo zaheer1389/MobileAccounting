@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu>
+    <item n1:icon="@drawable/ic_menu_export" n1:id="@id/menu_export_pdf" n1:title="@string/pdf_exprort"
+      xmlns:n1="http://schemas.android.com/apk/res/android" />
+    <item n2:icon="@drawable/calculator" n2:id="@id/menu_export_exel" n2:title="@string/exel_exprort"
+      xmlns:n2="http://schemas.android.com/apk/res/android" />
+    <item n3:icon="@drawable/calculator" n3:id="@id/menu_browse" n3:title="@string/title_activity_web_server"
+      xmlns:n3="http://schemas.android.com/apk/res/android" />
+    <item n4:icon="@drawable/calculator" n4:id="@id/menu_balshare" n4:title="Share Balance Detail"
+      xmlns:n4="http://schemas.android.com/apk/res/android" />
+    <item n5:icon="@drawable/calculator" n5:id="@id/menu_detailshare" n5:title="Share Account Detail"
+      xmlns:n5="http://schemas.android.com/apk/res/android" />
+    <item n6:icon="@drawable/calculator" n6:id="@id/menu_usecal" n6:title="@string/txt_Calculator"
+      xmlns:n6="http://schemas.android.com/apk/res/android" />
+    <item n7:icon="@drawable/ic_datepicker" n7:id="@id/menu_date" n7:title="Date" n8:showAsAction="always"
+      xmlns:n7="http://schemas.android.com/apk/res/android" xmlns:n8="http://schemas.android.com/apk/res-auto" />
+    <item n9:icon="@drawable/ic_action_search" n9:id="@id/menu_search" n9:title="@string/search" n10:actionViewClass="android.support.v7.widget.SearchView" n10:showAsAction="collapseActionView|ifRoom"
+      xmlns:n9="http://schemas.android.com/apk/res/android" xmlns:n10="http://schemas.android.com/apk/res-auto" />
+</menu>

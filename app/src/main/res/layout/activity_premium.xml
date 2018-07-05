@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="#ff34374a" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:ads="http://schemas.android.com/apk/res-auto">
+    <com.google.android.gms.ads.AdView android:id="@id/adView" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" ads:adSize="SMART_BANNER" ads:adUnitId="@string/ad_unit_id" />
+    <ScrollView android:id="@id/scrollView1" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/adView">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@color/white" android:layout_gravity="center" android:id="@id/textView2" android:padding="7.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:text="If You Want to purchase this app." />
+            <ImageView android:layout_gravity="center" android:id="@id/callus" android:layout_width="wrap_content" android:layout_height="60.0dip" android:layout_margin="10.0dip" android:src="@drawable/contact" />
+            <ImageView android:layout_gravity="center" android:id="@id/emailus" android:layout_width="fill_parent" android:layout_height="60.0dip" android:layout_margin="10.0dip" android:src="@drawable/email_u" />
+            <ImageView android:layout_gravity="center" android:id="@id/visit" android:layout_width="fill_parent" android:layout_height="60.0dip" android:layout_marginTop="10.0dip" android:src="@drawable/visit" />
+            <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@color/white" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:text="--------OR--------" />
+            <ImageView android:layout_gravity="center" android:id="@id/play_store" android:layout_width="wrap_content" android:layout_height="60.0dip" android:src="@drawable/play_store" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

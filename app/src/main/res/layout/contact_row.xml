@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n1:orientation="vertical" n1:id="@id/relativelay" n1:background="#ff34374a" n1:layout_width="fill_parent" n1:layout_height="wrap_content"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <TextView n1:textSize="@dimen/text_size_17" n1:textStyle="bold" n1:textColor="#ffffffff" n1:ellipsize="end" n1:id="@id/tvname" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginLeft="3.0dip" n1:layout_marginTop="3.0dip" n1:text="Title" n1:maxLines="1" />
+    <TextView n1:textSize="@dimen/text_size_14" n1:textColor="#ffffffff" n1:ellipsize="end" n1:id="@id/tvphone" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginLeft="3.0dip" n1:layout_marginTop="10.0dip" n1:text="Phone no" n1:maxLines="1" n1:layout_below="@id/tvname" />
+</RelativeLayout>

@@ -1,0 +1,440 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:n1="http://schemas.android.com/apk/res/android"
+    n1:layout_width="fill_parent"
+    n1:layout_height="fill_parent"
+    n1:background="#ff34374a"
+    n1:orientation="vertical">
+
+    <LinearLayout
+        n1:id="@id/layout1"
+        n1:layout_width="fill_parent"
+        n1:layout_height="100.0dip"
+        n1:background="@drawable/gradient_topbar"
+        n1:orientation="horizontal"
+        n1:padding="7.0dip">
+
+        <com.adslinfotech.mobileaccounting.utils.RoundedImageView
+            n1:id="@id/img_home_user"
+            n1:layout_width="80.0dip"
+            n1:layout_height="80.0dip"
+            n1:src="@drawable/profile_icon" />
+
+        <LinearLayout
+            n1:layout_width="fill_parent"
+            n1:layout_height="80.0dip"
+            n1:gravity="center"
+            n1:orientation="vertical"
+            n1:paddingLeft="10.0dip">
+
+            <TextView
+                n1:id="@id/tv_name"
+                n1:layout_width="fill_parent"
+                n1:layout_height="wrap_content"
+                n1:layout_marginLeft="10.0dip"
+                n1:gravity="center_vertical"
+                n1:textColor="@color/white"
+                n1:textSize="@dimen/text_size_15"
+                n1:textStyle="bold" />
+
+            <TextView
+                n1:id="@id/tv_email"
+                n1:layout_width="fill_parent"
+                n1:layout_height="wrap_content"
+                n1:layout_marginLeft="10.0dip"
+                n1:paddingLeft="1.0dip"
+                n1:textColor="@color/white"
+                n1:textSize="@dimen/text_size_12" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ScrollView
+        n1:layout_width="fill_parent"
+        n1:layout_height="wrap_content"
+        n1:layout_above="@id/adView"
+        n1:layout_below="@id/layout1"
+        n1:layout_marginBottom="5.0dip"
+        n1:layout_marginTop="5.0dip">
+
+        <LinearLayout
+            n1:layout_width="fill_parent"
+            n1:layout_height="wrap_content"
+            n1:orientation="vertical">
+
+            <LinearLayout
+                n1:layout_width="fill_parent"
+                n1:layout_height="wrap_content"
+                n1:layout_margin="5.0dip"
+                n1:layout_marginTop="10.0dip"
+                n1:orientation="vertical">
+
+                <TextView
+                    n1:layout_width="fill_parent"
+                    n1:layout_height="40.0dip"
+                    n1:background="#ff236087"
+                    n1:gravity="center"
+                    n1:text="@string/txt_payment"
+                    n1:textColor="@android:color/white"
+                    n1:textSize="@dimen/text_size_19"
+                    n1:textStyle="bold" />
+
+                <LinearLayout
+                    n1:layout_width="fill_parent"
+                    n1:layout_height="wrap_content"
+                    n1:layout_marginTop="5.0dip"
+                    n1:background="#ff3b4259"
+                    n1:orientation="horizontal">
+
+                    <TextView
+                        n1:layout_width="0.0dip"
+                        n1:layout_height="wrap_content"
+                        n1:layout_weight="1.0"
+                        n1:gravity="center_vertical"
+                        n1:padding="5.0dip"
+                        n1:text="@string/txt_tocredit"
+                        n1:textColor="@android:color/white"
+                        n1:textSize="@dimen/text_size_14"
+                        n1:textStyle="bold" />
+
+                    <TextView
+                        n1:layout_width="wrap_content"
+                        n1:layout_height="wrap_content"
+                        n1:layout_marginLeft="5.0dip"
+                        n1:text=":"
+                        n1:textColor="@android:color/white"
+                        n1:textSize="@dimen/text_size_14"
+                        n1:textStyle="bold" />
+
+                    <TextView
+                        n1:id="@id/tv_main_credit"
+                        style="@style/textBalanceHeaderValue"
+                        n1:layout_width="0.0dip"
+                        n1:layout_height="wrap_content"
+                        n1:layout_weight="1.7"
+                        n1:gravity="center_vertical"
+                        n1:padding="5.0dip"
+                        n1:text="0" />
+                </LinearLayout>
+
+                <LinearLayout
+                    n1:layout_width="fill_parent"
+                    n1:layout_height="40.0dip"
+                    n1:layout_marginTop="10.0dip"
+                    n1:background="#ff3b4259"
+                    n1:orientation="horizontal">
+
+                    <TextView
+                        n1:layout_width="0.0dip"
+                        n1:layout_height="50.0dip"
+                        n1:layout_weight="1.0"
+                        n1:gravity="center_vertical"
+                        n1:padding="5.0dip"
+                        n1:text="@string/txt_todebit"
+                        n1:textColor="@android:color/white"
+                        n1:textSize="@dimen/text_size_14"
+                        n1:textStyle="bold" />
+
+                    <TextView
+                        n1:layout_width="wrap_content"
+                        n1:layout_height="wrap_content"
+                        n1:layout_marginLeft="5.0dip"
+                        n1:text=":"
+                        n1:textColor="@android:color/white"
+                        n1:textSize="@dimen/text_size_14"
+                        n1:textStyle="bold" />
+
+                    <TextView
+                        n1:id="@id/tv_main_debit"
+                        style="@style/textBalanceHeaderValue"
+                        n1:layout_width="0.0dip"
+                        n1:layout_height="wrap_content"
+                        n1:layout_weight="1.7"
+                        n1:gravity="center_vertical"
+                        n1:padding="5.0dip"
+                        n1:text="0" />
+                </LinearLayout>
+
+                <LinearLayout
+                    n1:layout_width="fill_parent"
+                    n1:layout_height="40.0dip"
+                    n1:layout_marginTop="10.0dip"
+                    n1:background="#ff3b4259"
+                    n1:orientation="horizontal">
+
+                    <TextView
+                        n1:layout_width="0.0dip"
+                        n1:layout_height="50.0dip"
+                        n1:layout_weight="1.0"
+                        n1:gravity="center_vertical"
+                        n1:padding="5.0dip"
+                        n1:text="@string/txt_tobal"
+                        n1:textColor="@android:color/white"
+                        n1:textSize="@dimen/text_size_14"
+                        n1:textStyle="bold" />
+
+                    <TextView
+                        n1:layout_width="wrap_content"
+                        n1:layout_height="wrap_content"
+                        n1:layout_marginLeft="5.0dip"
+                        n1:text=":"
+                        n1:textColor="@android:color/white"
+                        n1:textSize="@dimen/text_size_14"
+                        n1:textStyle="bold" />
+
+                    <TextView
+                        n1:id="@id/tv_main_balance"
+                        style="@style/textBalanceHeaderValue"
+                        n1:layout_width="0.0dip"
+                        n1:layout_height="wrap_content"
+                        n1:layout_weight="1.7"
+                        n1:gravity="center_vertical"
+                        n1:padding="5.0dip"
+                        n1:text="0" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                n1:layout_width="fill_parent"
+                n1:layout_height="wrap_content"
+                n1:layout_margin="5.0dip"
+                n1:orientation="vertical">
+
+                <TextView
+                    n1:layout_width="fill_parent"
+                    n1:layout_height="40.0dip"
+                    n1:background="#ff236087"
+                    n1:gravity="center"
+                    n1:text="@string/txt_bac"
+                    n1:textColor="@android:color/white"
+                    n1:textSize="@dimen/text_size_19"
+                    n1:textStyle="bold" />
+
+                <LinearLayout
+                    n1:layout_width="fill_parent"
+                    n1:layout_height="40.0dip"
+                    n1:layout_marginTop="5.0dip"
+                    n1:background="#ff3b4259"
+                    n1:orientation="horizontal">
+
+                    <TextView
+                        n1:layout_width="0.0dip"
+                        n1:layout_height="50.0dip"
+                        n1:layout_weight="1.0"
+                        n1:gravity="center_vertical"
+                        n1:padding="5.0dip"
+                        n1:text="@string/txt_lastb"
+                        n1:textColor="@color/white"
+                        n1:textSize="@dimen/text_size_14"
+                        n1:textStyle="bold" />
+
+                    <TextView
+                        n1:id="@id/tv_backup_date"
+                        n1:layout_width="0.0dip"
+                        n1:layout_height="50.0dip"
+                        n1:layout_weight="1.3"
+                        n1:gravity="center_vertical"
+                        n1:padding="5.0dip"
+                        n1:text=":"
+                        n1:textColor="@android:color/white"
+                        n1:textSize="@dimen/text_size_14"
+                        n1:textStyle="bold" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                n1:layout_width="fill_parent"
+                n1:layout_height="wrap_content"
+                n1:layout_margin="5.0dip"
+                n1:background="@color/white"
+                n1:orientation="vertical">
+
+                <TextView
+                    n1:layout_width="fill_parent"
+                    n1:layout_height="40.0dip"
+                    n1:background="#ff236087"
+                    n1:gravity="center"
+                    n1:text="@string/txt_Reminders"
+                    n1:textColor="@android:color/white"
+                    n1:textSize="@dimen/text_size_19"
+                    n1:textStyle="bold" />
+
+                <LinearLayout
+                    n1:layout_width="fill_parent"
+                    n1:layout_height="40.0dip"
+                    n1:background="#ff3b4259"
+                    n1:orientation="horizontal">
+
+                    <TextView
+                        n1:layout_width="0.0dip"
+                        n1:layout_height="50.0dip"
+                        n1:layout_weight="1.0"
+                        n1:gravity="center_vertical"
+                        n1:padding="5.0dip"
+                        n1:text="@string/txt_today"
+                        n1:textColor="@android:color/white"
+                        n1:textSize="@dimen/text_size_14"
+                        n1:textStyle="bold" />
+
+                    <TextView
+                        n1:id="@id/tv_reminder"
+                        n1:layout_width="0.0dip"
+                        n1:layout_height="50.0dip"
+                        n1:layout_weight="1.3"
+                        n1:gravity="center_vertical"
+                        n1:padding="5.0dip"
+                        n1:text=": 0"
+                        n1:textColor="@android:color/white"
+                        n1:textSize="@dimen/text_size_14"
+                        n1:textStyle="bold" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                n1:layout_width="fill_parent"
+                n1:layout_height="wrap_content"
+                n1:layout_margin="5.0dip"
+                n1:background="@color/white"
+                n1:orientation="vertical">
+
+                <TextView
+                    n1:layout_width="fill_parent"
+                    n1:layout_height="40.0dip"
+                    n1:background="#ff236087"
+                    n1:gravity="center"
+                    n1:text="Account Summary"
+                    n1:textColor="@android:color/white"
+                    n1:textSize="@dimen/text_size_19"
+                    n1:textStyle="bold" />
+
+                <LinearLayout
+                    n1:layout_width="fill_parent"
+                    n1:layout_height="40.0dip"
+                    n1:background="#ff3b4259"
+                    n1:orientation="horizontal">
+
+                    <TextView
+                        n1:layout_width="0.0dip"
+                        n1:layout_height="50.0dip"
+                        n1:layout_weight="1.0"
+                        n1:gravity="center_vertical"
+                        n1:padding="5.0dip"
+                        n1:text="Total Account"
+                        n1:textColor="@android:color/white"
+                        n1:textSize="@dimen/text_size_14"
+                        n1:textStyle="bold" />
+
+                    <TextView
+                        n1:id="@id/tv_total_acc_home"
+                        n1:layout_width="0.0dip"
+                        n1:layout_height="50.0dip"
+                        n1:layout_weight="1.3"
+                        n1:gravity="center_vertical"
+                        n1:padding="5.0dip"
+                        n1:text=": 0"
+                        n1:textColor="@android:color/white"
+                        n1:textSize="@dimen/text_size_14"
+                        n1:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    n1:layout_width="fill_parent"
+                    n1:layout_height="40.0dip"
+                    n1:background="#ff3b4259"
+                    n1:orientation="horizontal">
+
+                    <TextView
+                        n1:layout_width="0.0dip"
+                        n1:layout_height="50.0dip"
+                        n1:layout_weight="1.0"
+                        n1:gravity="center_vertical"
+                        n1:padding="5.0dip"
+                        n1:text="Credit Account"
+                        n1:textColor="@android:color/white"
+                        n1:textSize="@dimen/text_size_14"
+                        n1:textStyle="bold" />
+
+                    <TextView
+                        n1:id="@id/tv_credit_accounts_home"
+                        n1:layout_width="0.0dip"
+                        n1:layout_height="50.0dip"
+                        n1:layout_weight="1.3"
+                        n1:gravity="center_vertical"
+                        n1:padding="5.0dip"
+                        n1:text=": 0"
+                        n1:textColor="@android:color/white"
+                        n1:textSize="@dimen/text_size_14"
+                        n1:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    n1:layout_width="fill_parent"
+                    n1:layout_height="40.0dip"
+                    n1:background="#ff3b4259"
+                    n1:orientation="horizontal">
+
+                    <TextView
+                        n1:layout_width="0.0dip"
+                        n1:layout_height="50.0dip"
+                        n1:layout_weight="1.0"
+                        n1:gravity="center_vertical"
+                        n1:padding="5.0dip"
+                        n1:text="Debit Account"
+                        n1:textColor="@android:color/white"
+                        n1:textSize="@dimen/text_size_14"
+                        n1:textStyle="bold" />
+
+                    <TextView
+                        n1:id="@id/tv_debit_accounts_home"
+                        n1:layout_width="0.0dip"
+                        n1:layout_height="50.0dip"
+                        n1:layout_weight="1.3"
+                        n1:gravity="center_vertical"
+                        n1:padding="5.0dip"
+                        n1:text=": 0"
+                        n1:textColor="@android:color/white"
+                        n1:textSize="@dimen/text_size_14"
+                        n1:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    n1:layout_width="fill_parent"
+                    n1:layout_height="40.0dip"
+                    n1:background="#ff3b4259"
+                    n1:orientation="horizontal">
+
+                    <TextView
+                        n1:layout_width="0.0dip"
+                        n1:layout_height="50.0dip"
+                        n1:layout_weight="1.0"
+                        n1:gravity="center_vertical"
+                        n1:padding="5.0dip"
+                        n1:text="Equal Account"
+                        n1:textColor="@android:color/white"
+                        n1:textSize="@dimen/text_size_14"
+                        n1:textStyle="bold" />
+
+                    <TextView
+                        n1:id="@id/tv_equal_accounts_home"
+                        n1:layout_width="0.0dip"
+                        n1:layout_height="50.0dip"
+                        n1:layout_weight="1.3"
+                        n1:gravity="center_vertical"
+                        n1:padding="5.0dip"
+                        n1:text=": 0"
+                        n1:textColor="@android:color/white"
+                        n1:textSize="@dimen/text_size_14"
+                        n1:textStyle="bold" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <com.google.android.gms.ads.AdView xmlns:n2="http://schemas.android.com/apk/res-auto"
+        n1:id="@id/adView"
+        n1:layout_width="wrap_content"
+        n1:layout_height="wrap_content"
+        n1:layout_alignParentBottom="true"
+        n1:background="#ff34374a"
+        n1:visibility="gone"
+        n2:adSize="SMART_BANNER"
+        n2:adUnitId="@string/ad_unit_id" />
+</RelativeLayout>

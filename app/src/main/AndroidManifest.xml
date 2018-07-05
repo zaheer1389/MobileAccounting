@@ -1,0 +1,148 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.adslinfotech.mobileaccounting">
+
+    <uses-permission android:name="com.adslinfotech.simpleaccounting.permission.C2D_MESSAGE" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
+    <uses-permission android:name="com.android.launcher.permission.UNINSTALL_SHORTCUT" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <application
+        android:allowBackup="true"
+        android:theme="@style/AppTheme"
+        android:label="@string/app_name"
+        android:icon="@drawable/accounting_icon"
+        android:name="com.adslinfotech.mobileaccounting.app.SimpleAccountingApp"
+        android:supportsRtl="true">
+
+        <meta-data android:name="com.google.firebase.messaging.default_notification_icon" android:resource="@drawable/accounting_icon" />
+        <meta-data android:name="com.google.firebase.messaging.default_notification_color" android:resource="@color/colorAccent" />
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version" />
+        <activity android:theme="@style/AppTheme.NoActionBar" android:name="com.adslinfotech.mobileaccounting.ui.ActivityLogin">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.adslinfotech.mobileaccounting.ui.UpgradeToPremium" android:screenOrientation="portrait" android:configChanges="touchscreen|keyboardHidden|navigation|orientation|screenLayout|screenSize|smallestScreenSize" />
+        <activity android:name="com.adslinfotech.mobileaccounting.activities.entry.ActivityRegistration" android:screenOrientation="portrait" android:configChanges="touchscreen|keyboardHidden|navigation|orientation|screenLayout|screenSize|smallestScreenSize" />
+        <activity android:name="com.adslinfotech.mobileaccounting.activities.entry.ActivityAddAccount" android:screenOrientation="portrait" android:configChanges="touchscreen|keyboardHidden|navigation|orientation|screenLayout|screenSize|smallestScreenSize" />
+        <activity android:name="com.adslinfotech.mobileaccounting.activities.entry.ActivityAddNote" android:screenOrientation="portrait" android:configChanges="touchscreen|keyboardHidden|navigation|orientation|screenLayout|screenSize|smallestScreenSize" />
+        <activity android:name="com.adslinfotech.mobileaccounting.activities.entry.ActivityAddReminder" android:screenOrientation="portrait" android:configChanges="touchscreen|keyboardHidden|navigation|orientation|screenLayout|screenSize|smallestScreenSize" />
+        <activity android:name="com.adslinfotech.mobileaccounting.activities.entry.ActivityAddCredit" android:screenOrientation="portrait" android:configChanges="touchscreen|keyboardHidden|navigation|orientation|screenLayout|screenSize|smallestScreenSize" />
+        <activity android:name="com.adslinfotech.mobileaccounting.activities.entry.ActivityAddDebit" android:screenOrientation="portrait" android:configChanges="touchscreen|keyboardHidden|navigation|orientation|screenLayout|screenSize|smallestScreenSize" />
+        <activity android:name="com.adslinfotech.mobileaccounting.activities.entry.ActivityAddCreditDebit" android:screenOrientation="portrait" android:configChanges="touchscreen|keyboardHidden|navigation|orientation|screenLayout|screenSize|smallestScreenSize" />
+        <activity android:name="com.adslinfotech.mobileaccounting.activities.entry.ActivityInterAccount" android:screenOrientation="portrait" android:configChanges="touchscreen|keyboardHidden|navigation|orientation|screenLayout|screenSize|smallestScreenSize" />
+        <activity android:name="com.adslinfotech.mobileaccounting.fragment.ChooseDateActivity" android:screenOrientation="portrait" android:configChanges="touchscreen|keyboardHidden|navigation|orientation|screenLayout|screenSize|smallestScreenSize" />
+        <activity android:name="com.adslinfotech.mobileaccounting.activities.edit.ActivityEditReminder" android:screenOrientation="portrait" android:configChanges="touchscreen|keyboardHidden|navigation|orientation|screenLayout|screenSize|smallestScreenSize" />
+        <activity android:name="com.adslinfotech.mobileaccounting.ui.ActivitySearchAccount" android:screenOrientation="portrait" android:configChanges="touchscreen|keyboardHidden|navigation|orientation|screenLayout|screenSize|smallestScreenSize" />
+        <activity android:name="com.adslinfotech.mobileaccounting.activities.edit.ActivityEditAccount" android:screenOrientation="portrait" android:configChanges="touchscreen|keyboardHidden|navigation|orientation|screenLayout|screenSize|smallestScreenSize" />
+        <activity android:name="com.adslinfotech.mobileaccounting.activities.edit.ActivityEditProfile" android:screenOrientation="portrait" android:configChanges="touchscreen|keyboardHidden|navigation|orientation|screenLayout|screenSize|smallestScreenSize" />
+        <activity android:name="com.adslinfotech.mobileaccounting.ui.ActivitySearchCategory" android:screenOrientation="portrait" android:configChanges="touchscreen|keyboardHidden|navigation|orientation|screenLayout|screenSize|smallestScreenSize" />
+        <activity android:name="com.adslinfotech.mobileaccounting.activities.edit.ActivityChangePassword" android:screenOrientation="portrait" android:configChanges="touchscreen|keyboardHidden|navigation|orientation|screenLayout|screenSize|smallestScreenSize" />
+        <activity android:name="com.adslinfotech.mobileaccounting.ui.ActivityPreferences" android:screenOrientation="portrait" android:configChanges="touchscreen|keyboardHidden|navigation|orientation|screenLayout|screenSize|smallestScreenSize" />
+        <activity android:name="com.adslinfotech.mobileaccounting.activities.edit.ActivityEditPersonalNote" android:screenOrientation="portrait" android:configChanges="touchscreen|keyboardHidden|navigation|orientation|screenLayout|screenSize|smallestScreenSize" />
+        <activity android:name="com.adslinfotech.mobileaccounting.activities.utils.ActivityUserManual" android:screenOrientation="portrait" android:configChanges="touchscreen|keyboardHidden|navigation|orientation|screenLayout|screenSize|smallestScreenSize" />
+        <activity android:name="com.adslinfotech.mobileaccounting.activities.detail.NoteDetailScreen" android:screenOrientation="portrait" android:configChanges="touchscreen|keyboardHidden|navigation|orientation|screenLayout|screenSize|smallestScreenSize" />
+        <activity android:name="com.adslinfotech.mobileaccounting.activities.edit.ActivityEditTransaction" />
+        <activity android:name="com.adslinfotech.mobileaccounting.drive.UploadToDriveActivity" android:screenOrientation="portrait" android:configChanges="touchscreen|keyboardHidden|navigation|orientation|screenLayout|screenSize|smallestScreenSize" />
+        <activity android:name="com.adslinfotech.mobileaccounting.dropbox.DropBoxImportActivity" android:screenOrientation="portrait" android:configChanges="touchscreen|keyboardHidden|navigation|orientation|screenLayout|screenSize|smallestScreenSize" />
+        <activity android:name="com.adslinfotech.mobileaccounting.drive.ImportFromDriveActivity" />
+        <activity android:name="com.adslinfotech.mobileaccounting.alarm.ActivityShare" android:screenOrientation="portrait" android:configChanges="touchscreen|keyboardHidden|navigation|orientation|screenLayout|screenSize|smallestScreenSize" />
+        <activity android:name="com.adslinfotech.mobileaccounting.activities.db.ImportDbActivity" />
+        <service android:name="com.adslinfotech.mobileaccounting.alarm.NotifyService" />
+        <service android:name="com.adslinfotech.mobileaccounting.alarm.ScheduleService" />
+        <service android:name="com.adslinfotech.mobileaccounting.gmail.SendBalanceDetailService" />
+        <service android:name="com.adslinfotech.mobileaccounting.gmail.SendCreditDetailService" />
+        <activity android:name="com.adslinfotech.mobileaccounting.image.FullScreenImage" android:screenOrientation="portrait" android:configChanges="touchscreen|keyboardHidden|navigation|orientation|screenLayout|screenSize|smallestScreenSize" />
+        <activity android:name="com.adslinfotech.mobileaccounting.ui.NotificationActivity" android:screenOrientation="portrait" android:configChanges="touchscreen|keyboardHidden|navigation|orientation|screenLayout|screenSize|smallestScreenSize" />
+        <activity android:name="com.adslinfotech.mobileaccounting.contact.ContactListActivity" android:screenOrientation="portrait" android:configChanges="touchscreen|keyboardHidden|navigation|orientation|screenLayout|screenSize|smallestScreenSize" />
+        <activity android:label="@string/app_name" android:name="com.adslinfotech.mobileaccounting.calculator.Calculator" />
+        <activity android:theme="@style/WindowTitleBackground" android:name="com.adslinfotech.mobileaccounting.ui.ActivityBalanceNotification" />
+        <activity android:name="com.adslinfotech.mobileaccounting.activities.report.AccountLedgerActivity" />
+        <activity android:name="com.adslinfotech.mobileaccounting.activities.report.DateLedgerActivity" />
+        <activity android:name="com.adslinfotech.mobileaccounting.activities.report.CategoryLedgerActivity" />
+        <activity android:name="com.adslinfotech.mobileaccounting.activities.report.OverallCategoryActivity" />
+        <activity android:name="com.adslinfotech.mobileaccounting.activities.report.DayTransactionActivity" />
+        <activity android:name="com.adslinfotech.mobileaccounting.activities.report.DateTransactionActivity" />
+        <activity android:name="com.adslinfotech.mobileaccounting.activities.report.LastTransactionActivity" />
+        <activity android:name="com.adslinfotech.mobileaccounting.activities.detail.AccountDetailActivity" android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.adslinfotech.mobileaccounting.activities.report.ShowReminderActivity" />
+        <activity android:name="com.adslinfotech.mobileaccounting.activities.report.LastYearActivity" />
+        <activity android:name="com.adslinfotech.mobileaccounting.activities.report.AccountListActivity" />
+        <activity android:name="com.adslinfotech.mobileaccounting.activities.invoice.InvoiceActivity" />
+        <activity android:name="com.adslinfotech.mobileaccounting.activities.report.DayCummAccountActivity" />
+        <activity android:name="com.adslinfotech.mobileaccounting.activities.DbActivity" android:screenOrientation="portrait" />
+        <activity android:name="com.adslinfotech.mobileaccounting.activities.ManageFilesActivity" />
+        <activity android:theme="@style/AppTheme.NoActionBar" android:label="@string/app_name" android:name="com.adslinfotech.mobileaccounting.activities.DashboardActivity" />
+        <service android:name="com.adslinfotech.mobileaccounting.services.MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name="com.adslinfotech.mobileaccounting.services.MyFirebaseInstanceIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+        <activity android:name="com.dropbox.core.android.AuthActivity" android:launchMode="singleTask" android:configChanges="keyboard|orientation">
+            <intent-filter>
+                <data android:scheme="db-daa0nmzw7jgshqd" />
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.adslinfotech.mobileaccounting.activities.BrowesDbActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:scheme="file" />
+                <data android:host="*" />
+                <data android:pathPattern=".*\.backup" />
+                <data android:pathPattern=".*\..*\.backup" />
+                <data android:pathPattern=".*\..*\..*\.backup" />
+                <data android:pathPattern=".*\..*\..*\..*\.backup" />
+                <data android:pathPattern=".*\..*\..*\..*\..*\.backup" />
+                <data android:pathPattern=".*\..*\..*\..*\..*\..*\.backup" />
+                <data android:mimeType="*/*" />
+            </intent-filter>
+        </activity>
+        <meta-data android:name="android.support.VERSION" android:value="26.1.0" />
+        <service android:name="com.google.android.gms.auth.api.signin.RevocationBoundService" android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION" android:exported="true" />
+        <service android:name="com.google.firebase.messaging.FirebaseMessagingService" android:exported="true">
+            <intent-filter android:priority="-500">
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <receiver android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver" android:permission="com.google.android.c2dm.permission.SEND" android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <category android:name="com.adslinfotech.simpleaccounting" />
+            </intent-filter>
+        </receiver>
+        <service android:name="com.google.firebase.iid.FirebaseInstanceIdService" android:exported="true">
+            <intent-filter android:priority="-500">
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+        <provider android:name="com.google.firebase.provider.FirebaseInitProvider" android:exported="false" android:authorities="com.adslinfotech.mobileaccounting.firebaseinitprovider" android:initOrder="100" />
+        <meta-data android:name="android.arch.lifecycle.VERSION" android:value="27.0.0-SNAPSHOT" />
+    </application>
+
+</manifest>

@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="account_type">
+        <item>General</item>
+        <item>Friend</item>
+        <item>Business</item>
+        <item>Relative</item>
+        <item>Individual</item>
+        <item>Income</item>
+        <item>Expense</item>
+    </string-array>
+    <string-array name="gender_people">
+        <item>Man</item>
+        <item>Woman</item>
+    </string-array>
+    <string-array name="nav_menu_items">
+        <item>Home</item>
+        <item>Credit-Recevied</item>
+        <item>Debit-Paid</item>
+        <item>Credit-Debit (Multiple)</item>
+        <item>Account Ledger</item>
+        <item>Account Ledger Between Date</item>
+        <item>Category wise Balance Summary</item>
+        <item>All Category Balance Summary</item>
+        <item>Day Wise Transaction Report</item>
+        <item>Day Wise Cumulative Report</item>
+        <item>Day Wise Cumulative Account Report</item>
+        <item>Last Transactions Report</item>
+        <item>Last 12 Month Transaction Report</item>
+        <item>Show Reminders</item>
+    </string-array>
+    <string-array name="nav_menu_items_profile">
+        <item>Backup/Restore</item>
+        <item>Profile</item>
+        <item>Account List</item>
+        <item>Change Password</item>
+        <item>Manage Files</item>
+        <item>Change Date Format</item>
+        <item>Use Calculator</item>
+        <item>Setting</item>
+        <item>User Manual</item>
+        <item>Refer App to Friend</item>
+        <item>More Apps and Rating</item>
+        <item>FAQ</item>
+        <item>Help Video</item>
+        <item>Visit us</item>
+    </string-array>
+    <string-array name="arr_settle_option">
+        <item>As Per Zero</item>
+        <item>With Balance Amount</item>
+    </string-array>
+    <string-array name="arr_settle_values">
+        <item>0</item>
+        <item>1</item>
+    </string-array>
+    <string-array name="currency_options">
+        <item>None</item>
+        <item>Indian Rupees</item>
+        <item>Dollar</item>
+        <item>Dinar</item>
+        <item>Euro</item>
+        <item>Pound</item>
+        <item>Riyal</item>
+        <item>Ruble</item>
+        <item>Rupee</item>
+        <item>Yen</item>
+        <item>Yuan</item>
+        <item>Malaysian Ringgit</item>
+    </string-array>
+    <string-array name="currency_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+    </string-array>
+    <string-array name="export_options">
+        <item>PDF</item>
+        <item>Excel</item>
+    </string-array>
+    <string-array name="export_values">
+        <item>0</item>
+        <item>1</item>
+    </string-array>
+    <string-array name="language_options">
+        <item>English</item>
+        <item>Hindi</item>
+        <item>Spanish</item>
+        <item>French</item>
+        <item>Portuguese</item>
+        <item>Russian</item>
+        <item>Arabic</item>
+        <item>Chinese</item>
+        <item>Malay</item>
+        <item>Telugu</item>
+        <item>Tamil</item>
+        <item>Marathi</item>
+    </string-array>
+    <string-array name="language_values">
+        <item>en</item>
+        <item>hi</item>
+        <item>es</item>
+        <item>fr</item>
+        <item>pt</item>
+        <item>ru</item>
+        <item>ar</item>
+        <item>zh</item>
+        <item>ms</item>
+        <item>te</item>
+        <item>ta</item>
+        <item>mr</item>
+    </string-array>
+    <string-array name="sort_order_options">
+        <item>Ascending Order</item>
+        <item>Descending Order</item>
+    </string-array>
+    <string-array name="sort_order_values">
+        <item>asc</item>
+        <item>desc</item>
+    </string-array>
+</resources>

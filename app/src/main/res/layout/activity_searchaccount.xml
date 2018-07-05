@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="#34374a" android:focusableInTouchMode="true" android:descendantFocusability="beforeDescendants" android:layout_width="match_parent" android:layout_height="match_parent">
+    <EditText android:textStyle="bold" android:textColor="@color/white" android:textColorHint="@color/white" android:id="@+id/et_search_complain" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="3dp" android:hint="@string/search_here" android:textCursorDrawable="@drawable/cursur_style" />
+    <ListView android:id="@+id/list_account" android:layout_width="match_parent" android:layout_height="wrap_content"  android:divider="#ffffff" android:dividerHeight="1dp" android:choiceMode="singleChoice" android:layout_weight="1.0" />
+    <TextView android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@+id/empty" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:text="No Recording" />
+</LinearLayout>

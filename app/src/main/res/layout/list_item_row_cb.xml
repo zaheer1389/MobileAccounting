@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n1:orientation="vertical" n1:background="#ff3b4259" n1:layout_width="fill_parent" n1:layout_height="wrap_content"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <TextView n1:textSize="@dimen/text_size_12" n1:textStyle="bold" n1:textColor="@color/white" n1:id="@id/tv_title" n1:paddingLeft="3.0dip" n1:paddingTop="15.0dip" n1:paddingRight="20.0dip" n1:paddingBottom="10.0dip" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="lkdsnflsdk" />
+    <LinearLayout n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_alignParentRight="true">
+        <View n1:layout_gravity="center_vertical" n1:background="@color/white" n1:layout_width="1.0dip" n1:layout_height="30.0dip" />
+        <CheckBox n1:id="@id/cb_select" n1:background="@color/checkbox_bg" n1:paddingLeft="20.0dip" n1:paddingTop="20.0dip" n1:paddingRight="20.0dip" n1:paddingBottom="10.0dip" n1:focusable="false" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="6.0sp" />
+    </LinearLayout>
+</RelativeLayout>

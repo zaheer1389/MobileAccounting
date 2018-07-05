@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#ff34374a" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:ads="http://schemas.android.com/apk/res-auto">
+    <com.google.android.gms.ads.AdView android:id="@id/adView" android:background="#ff34374a" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentTop="true" ads:adSize="SMART_BANNER" ads:adUnitId="@string/ad_unit_id" />
+    <ListView android:id="@android:id/list" android:layout_width="fill_parent" android:layout_height="0.0dip" android:divider="@color/white" android:dividerHeight="1.0dip" android:choiceMode="multipleChoice" android:layout_weight="1.18" />
+    <RelativeLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@id/lout_footer" android:background="#ff236087" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="18.0sp" android:textStyle="bold" android:textColor="@color/white" android:padding="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/strAll" android:layout_toLeftOf="@id/chkAll" />
+        <CheckBox android:gravity="center_vertical" android:id="@id/chkAll" android:background="@color/checkbox_bg" android:padding="20.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+</LinearLayout>

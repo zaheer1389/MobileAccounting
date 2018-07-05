@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:icon="@drawable/ic_menu_export" android:id="@id/menu_export_pdf" android:title="@string/pdf_exprort" />
+    <item android:icon="@drawable/calculator" android:id="@id/menu_export_exel" android:title="@string/exel_exprort" />
+    <item android:icon="@drawable/calculator" android:id="@id/menu_browse" android:title="@string/title_activity_web_server" />
+    <item android:icon="@drawable/calculator" android:id="@id/menu_usecal" android:title="@string/txt_Calculator" />
+</menu>

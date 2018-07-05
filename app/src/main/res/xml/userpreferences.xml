@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="@string/sAutomaticBackup" android:key="automaticCleanupPref">
+        <CheckBoxPreference android:title="@string/txt_Autobackupgen" android:key="PREF_DB_BACKUP" android:summary="@string/txt_Turnbackup" android:defaultValue="false" />
+        <EditTextPreference android:title="@string/sMaxTotalSizeOfFiles" android:key="DB_BACKUP_DAY" android:defaultValue="3" android:dialogTitle="@string/sMaxTotalSizeOfFiles" android:dialogMessage="@string/sMaxTotalSizeOfFilesDlgMsg" android:inputType="number" android:imeOptions="actionDone" />
+        <ListPreference android:entries="@array/currency_options" android:title="@string/txt_ChooseCurrency" android:key="PREF_CURRENCY" android:summary="@string/txt_ChooseCountry" android:defaultValue="0" android:dialogTitle="@string/txt_ChooseCurrency" android:entryValues="@array/currency_values" />
+        <ListPreference android:entries="@array/language_options" android:title="@string/txt_Chooselang" android:key="PREF_LANGUAGE" android:summary="@string/txt_Selectlang" android:defaultValue="en" android:dialogTitle="@string/txt_Chooselang" android:entryValues="@array/language_values" />
+        <ListPreference android:title="Choose Date Format" android:key="PREF_DATE_FORMAT" android:summary="Select Date Format" android:defaultValue="dd/MM/yyyy" android:dialogTitle="Choose Date Format" />
+        <CheckBoxPreference android:title="@string/txt_TitlePass" android:key="PREF_PASSWORD" android:summary="@string/txt_SelectPass" android:defaultValue="true" />
+        <ListPreference android:entries="@array/sort_order_options" android:title="List Order" android:key="PREF_LIST_ORDER" android:summary="Account ledger display order date wise." android:defaultValue="asc" android:dialogTitle="List Order" android:entryValues="@array/sort_order_values" />
+        <CheckBoxPreference android:title="List Type" android:key="PREF_LIST_TYPE" android:summary="Account ledger display tabular form." android:defaultValue="true" />
+        <ListPreference android:entries="@array/arr_settle_option" android:title="@string/title_activity_settle_account" android:key="PREF_SETTLE" android:summary="All account will be settled." android:defaultValue="en" android:dialogTitle="@string/title_activity_settle_account" android:entryValues="@array/arr_settle_values" />
+    </PreferenceCategory>
+</PreferenceScreen>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector>
+    <item n1:state_pressed="true"
+      xmlns:n1="http://schemas.android.com/apk/res/android">
+        <shape>
+            <gradient n1:startColor="@color/black42" n1:endColor="@color/black42" n1:angle="270.0" />
+            <stroke n1:width="3.0dip" n1:color="@color/white1" />
+            <corners n1:radius="3.0dip" />
+            <padding n1:left="10.0dip" n1:top="10.0dip" n1:right="10.0dip" n1:bottom="10.0dip" />
+        </shape>
+    </item>
+    <item n2:state_focused="true"
+      xmlns:n2="http://schemas.android.com/apk/res/android">
+        <shape>
+            <gradient n2:startColor="@color/drkred36" n2:endColor="@color/drkred35" n2:angle="270.0" />
+            <stroke n2:width="3.0dip" n2:color="@color/black42" />
+            <corners n2:radius="3.0dip" />
+            <padding n2:left="10.0dip" n2:top="10.0dip" n2:right="10.0dip" n2:bottom="10.0dip" />
+        </shape>
+    </item>
+    <item>
+        <shape>
+            <gradient n3:startColor="@color/drkred36" n3:endColor="@color/drkred35" n3:angle="270.0"
+              xmlns:n3="http://schemas.android.com/apk/res/android" />
+            <stroke n4:width="3.0dip" n4:color="@color/black42"
+              xmlns:n4="http://schemas.android.com/apk/res/android" />
+            <corners n5:radius="3.0dip"
+              xmlns:n5="http://schemas.android.com/apk/res/android" />
+            <padding n6:left="10.0dip" n6:top="10.0dip" n6:right="10.0dip" n6:bottom="10.0dip"
+              xmlns:n6="http://schemas.android.com/apk/res/android" />
+        </shape>
+    </item>
+</selector>

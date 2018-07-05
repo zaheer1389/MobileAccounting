@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n1:id="@id/rel" n1:background="#ff3b4259" n1:layout_width="fill_parent" n1:layout_height="wrap_content"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <LinearLayout n1:orientation="horizontal" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_margin="5.0dip" n1:layout_toLeftOf="@id/tv_acc_category" n1:layout_toStartOf="@id/tv_acc_category">
+        <com.adslinfotech.mobileaccounting.utils.RoundedImageView
+            n1:id="@id/img_acc" n1:layout_width="50.0dip" n1:layout_height="50.0dip" n1:layout_marginTop="3.0dip" n1:layout_marginBottom="3.0dip" n1:src="@drawable/profile_icon" />
+        <LinearLayout n1:layout_gravity="center_vertical" n1:orientation="vertical" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="8.0dip" n1:layout_marginStart="8.0dip">
+            <TextView n1:textSize="@dimen/text_size_14" n1:textStyle="bold" n1:textColor="@color/white" n1:gravity="center_vertical" n1:id="@id/tv_rmd_sub" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:lines="1" />
+            <TextView n1:textSize="@dimen/text_size_12" n1:textColor="@color/white" n1:id="@id/tv_rmd_desc" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginTop="10.0dip" n1:lines="1" />
+        </LinearLayout>
+    </LinearLayout>
+    <TextView n1:textSize="@dimen/text_size_11" n1:textStyle="bold" n1:textColor="@color/white" n1:gravity="end|center" n1:id="@id/tv_acc_category" n1:layout_width="65.0dip" n1:layout_height="wrap_content" n1:layout_marginRight="2.0dip" n1:maxLines="2" n1:minLines="1" n1:layout_toLeftOf="@id/right_arrow" n1:layout_centerVertical="true" n1:layout_marginEnd="2.0dip" n1:layout_toStartOf="@id/right_arrow" />
+    <ImageView n1:id="@id/right_arrow" n1:layout_width="20.0dip" n1:layout_height="20.0dip" n1:src="@drawable/ic_category_rightarrow_gray" n1:layout_alignParentRight="true" n1:layout_centerVertical="true" n1:layout_alignParentEnd="true" />
+    <TextView n1:id="@id/tv_divider" n1:background="@color/white" n1:layout_width="fill_parent" n1:layout_height="1.0dip" n1:layout_alignParentBottom="true" />
+</RelativeLayout>

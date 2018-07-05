@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:orientation="horizontal" n1:background="@drawable/row_radius" n1:padding="8.0dip" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginBottom="5.0dip"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <TextView n1:gravity="center" n1:id="@id/txt_sno" n1:layout_width="50.0dip" n1:layout_height="fill_parent" n1:text="Sno" />
+    <View n1:background="@color/s_details_color" n1:layout_width="1.0px" n1:layout_height="fill_parent" n1:layout_marginTop="@dimen/s_details_mar_top" />
+    <RelativeLayout n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginLeft="5.0dip">
+        <TextView n1:textSize="@dimen/s_name_size" n1:textColor="@color/s_name_color" n1:id="@id/txt_name" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:text="Account Name" n1:maxLines="1" />
+        <TextView n1:textSize="@dimen/s_email_size" n1:textColor="@color/s_details_color" n1:id="@id/txt_balance" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="Balance" n1:maxLines="1" n1:layout_below="@id/txt_name" n1:layout_alignParentRight="true" n1:layout_centerVertical="true" />
+    </RelativeLayout>
+</LinearLayout>

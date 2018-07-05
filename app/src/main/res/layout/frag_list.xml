@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n1:background="#ff34374a" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <ListView n1:id="@android:id/list" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:listSelector="@drawable/list_selector" n1:divider="@color/white" n1:dividerHeight="1.0dip" n1:layout_above="@id/adView" />
+    <com.google.android.gms.ads.AdView n1:id="@id/adView" n1:background="#ff34374a" n1:visibility="gone" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginTop="@dimen/margin_admob" n1:layout_alignParentBottom="true" n2:adSize="SMART_BANNER" n2:adUnitId="@string/ad_unit_id" xmlns:n2="http://schemas.android.com/apk/res-auto" />
+</RelativeLayout>

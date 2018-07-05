@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="5.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@android:color/white" android:gravity="center" android:id="@id/tv_name" android:background="#ff236087" android:layout_width="fill_parent" android:layout_height="30.0dip" android:text="@string/txt_As_on_Date" />
+    <LinearLayout android:orientation="horizontal" android:background="#ff3b4259" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="2.0dip">
+        <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@android:color/white" android:gravity="center_vertical" android:padding="5.0dip" android:layout_width="0.0dip" android:layout_height="30.0dip" android:text="@string/txt_Credit" android:layout_weight="1.0" />
+        <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@android:color/white" android:gravity="center_vertical" android:id="@id/txt_total_credit" android:padding="5.0dip" android:layout_width="0.0dip" android:layout_height="30.0dip" android:text=":" android:layout_weight="3.0" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:background="#ff3b4259" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="2.0dip">
+        <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@android:color/white" android:gravity="center_vertical" android:padding="5.0dip" android:layout_width="0.0dip" android:layout_height="30.0dip" android:text="@string/txt_Debit" android:layout_weight="1.0" />
+        <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@android:color/white" android:gravity="center_vertical" android:id="@id/txt_total_debit" android:padding="5.0dip" android:layout_width="0.0dip" android:layout_height="30.0dip" android:text=":" android:layout_weight="3.0" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:background="#ff3b4259" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="2.0dip">
+        <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@android:color/white" android:gravity="center_vertical" android:padding="5.0dip" android:layout_width="0.0dip" android:layout_height="30.0dip" android:text="@string/txt_Balance" android:layout_weight="1.0" />
+        <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@android:color/white" android:gravity="center_vertical" android:id="@id/txt_total_balance" android:padding="5.0dip" android:layout_width="0.0dip" android:layout_height="30.0dip" android:text=":" android:layout_weight="3.0" />
+    </LinearLayout>
+    <TextView android:textSize="16.0sp" android:textStyle="bold" android:gravity="center" android:id="@id/view_separate" android:background="#ff236087" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="2.0dip" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/lout_opening_bal" android:background="#ff3b4259" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="2.0dip">
+        <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@android:color/white" android:gravity="center_vertical" android:padding="5.0dip" android:layout_width="0.0dip" android:layout_height="30.0dip" android:text="Opening bal" android:layout_weight="1.0" />
+        <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@android:color/white" android:gravity="center_vertical" android:id="@id/txt_opening_balance" android:padding="5.0dip" android:layout_width="0.0dip" android:layout_height="30.0dip" android:text=":" android:layout_weight="2.0" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/lout_overall" android:background="#ff3b4259" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="2.0dip">
+        <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@android:color/white" android:gravity="center_vertical" android:padding="5.0dip" android:layout_width="0.0dip" android:layout_height="30.0dip" android:text="Overall bal" android:layout_weight="1.0" />
+        <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@android:color/white" android:gravity="center_vertical" android:id="@id/txt_overall_balance" android:padding="5.0dip" android:layout_width="0.0dip" android:layout_height="30.0dip" android:text=":" android:layout_weight="2.0" />
+    </LinearLayout>
+</LinearLayout>
